@@ -11,6 +11,7 @@
 #include "llvm/IR/IRBuilder.h"
 
 #include <string>
+
 #include <vector>
 
 using namespace llvm;
@@ -36,8 +37,8 @@ namespace{
         };
 
         bool runOnLoop(Loop * L, LPPassManager &LPM) override{
-            
-            bool isChanged;
+            bool isChanged = false;
+
             PHINode* induction_var;
             std::vector<BasicBlock*> l_blocks;
             std::vector<Instruction*> induction_vars;
