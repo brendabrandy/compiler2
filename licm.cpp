@@ -7,7 +7,7 @@
 
 #include <vector>
 // find invariant code
-
+// NOTE: need to make it work for nested loops
 using namespace llvm;
 
 namespace{

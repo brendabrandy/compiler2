@@ -4,6 +4,7 @@ add_llvm_loadable_module( bso_optimization
   cse.cpp
   const_prop.cpp
   licm.cpp
+  ido.cpp
 
   DEPENDS
   PLUGIN_TOOL
