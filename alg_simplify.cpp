@@ -35,7 +35,7 @@ namespace{
             bool isChange = false;
             for (BasicBlock::iterator DI = BB.begin(); DI != BB.end(); ){
                 Instruction *I = &(*DI++);
-                ConstantInt *C1, *C2;
+                ConstantInt *C1;
                 if ((C1 = dyn_cast<ConstantInt>(I->getOperand(1)))){
                     temp = 1;
                 }else if ((C1 = dyn_cast<ConstantInt>(I->getOperand(0)))){
