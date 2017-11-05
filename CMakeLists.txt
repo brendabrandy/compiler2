@@ -7,6 +7,7 @@ add_llvm_loadable_module( bso_optimization
   ido.cpp
   alg_simplify.cpp
   livenessAnalysis.cpp
+  dominanceAnalysis.cpp
 
   DEPENDS
   PLUGIN_TOOL

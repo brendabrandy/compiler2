@@ -12,6 +12,8 @@
 
 using namespace llvm;
 
+// how does phi node come into play in liveness analysis
+
 namespace{
     struct bso_liveness_analysis : public FunctionPass{
         static char ID;
